@@ -43,18 +43,16 @@ body {
 
 :root {
     /* background colors  */
-    --bg-color: #dda15e;
-    --bg-color1: #bc6c25;
-    --bg-primary-color: #606c38;
-    --bg-secondary-color: #432818;
-    --bg-tertiary-color: #48cae4;
+    --bg-primary-color: #adb5bd;
+    --bg-secondary-color: #212529;
+    --bg-tertiary-color: #dee2e6;
 
 
     /* text colors */
-    --text-primary-color: black;
-    --text-secondary-color: #283618;
-    --text-tertiary1-color: #fefae0;
-    --text-tertiary2-color: #023e8a;
+    --text-primary-color: #000000;
+    --text-secondary-color: #0c1821;
+    --text-tertiary1-color: #f8f9fa;
+    --text-tertiary2-color: #343a40;
 
     /* spacing variables */
     --space-xs: 4px;
@@ -77,7 +75,11 @@ body {
 main {
     height: 100%;
     width: 100%;
-    background-color: var(--bg-color);
+    /* background-color: var(--bg-tertiary-color); */
+    background-image: url(https://i.pinimg.com/1200x/cf/05/31/cf0531b6c53e2fc6c33819808ac568be.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     padding: var(--space-md);
@@ -87,7 +89,9 @@ main {
 main .sidebar {
     height: 40%;
     width: 100%;
-    background-color: var(--bg-primary-color);
+    background-color: var(--bg-secondary-color);
+    opacity: 0.95;
+    border: 2px solid var(--text-tertiary2-color);
     border-radius: var(--border-radius-lg);
     padding: var(--space-md);
     display: flex;
@@ -98,7 +102,7 @@ main .sidebar {
 }
 
 main .sidebar h1 {
-    color: var(--text-secondary-color);
+    color: var(--text-tertiary1-color);
     font-size: 70px;
     letter-spacing: 1px;
     font-family: Beautiful-Sayings;
@@ -129,7 +133,11 @@ main .sidebar h2 input::placeholder {
 main .sidebar .sub-sec {
     height: 40%;
     width: 100%;
-    background-color: var(--bg-secondary-color);
+    /* background-image: url(https://i.pinimg.com/1200x/a6/bd/4d/a6bd4db7ee7053689bd971b36cbcd1ef.jpg); */
+    background-image: url(https://i.pinimg.com/1200x/cf/05/31/cf0531b6c53e2fc6c33819808ac568be.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     border-radius: var(--border-radius-lg);
     display: flex;
     justify-content: space-between;
@@ -149,7 +157,7 @@ main .sidebar .sub-sec .part2 {
 
 main .sidebar .sub-sec .part1 h3,
 main .sidebar .sub-sec .part2 h3 {
-    color: var(--text-tertiary1-color);
+    color: var(--text-primary-color);
     font-size: 25px;
     font-family: Aeonik-Bold;
     letter-spacing: 1px;
@@ -157,7 +165,7 @@ main .sidebar .sub-sec .part2 h3 {
 
 main .sidebar .sub-sec .part1 h4,
 main .sidebar .sub-sec .part2 h4 {
-    color: var(--text-tertiary1-color);
+    color: var(--text-secondary-color);
     font-size: 20px;
     font-family: Aeonik-Light;
     letter-spacing: 1px;
@@ -182,12 +190,17 @@ main .sidebar button:active {
 
 /* Boxes */
 .box {
-    border: 2px solid #00aaff;
+    border: 2px solid var(--text-tertiary2-color);
     border-radius: var(--border-radius-lg);
     padding: var(--space-md);
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: end;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.75;
+    border-radius: var(--border-radius-lg);
 }
 
 .box h1 {
@@ -196,17 +209,40 @@ main .sidebar button:active {
     font-size: 15px;
     font-family: PocusPrimera;
     letter-spacing: 2px;
-    background-color: var(--text-tertiary1-color);
+    /* background-color: var(--text-tertiary1-color); */
+    color: var(--text-tertiary1-color);
     padding: var(--space-md);
     border-radius: var(--border-radius-md);
 }
 
 .quote {
     /* height: auto; */
+    /* background-image: url(https://i.pinimg.com/1200x/59/61/38/596138beb239ada8aab67dbb4e288be7.jpg); */
+    background-image: url(https://i.pinimg.com/1200x/02/6f/3c/026f3cf9834f2382e64c441c054ba1fd.jpg);
 }
 
 .goals {
     /* height: 20%; */
+    background-image: url(https://i.pinimg.com/736x/61/a1/5f/61a15f67d27f4b4cb60b435ae415ba25.jpg);
+}
+
+.todo {
+    /* height: 20%; */
+    background-image: url(https://i.pinimg.com/1200x/8e/09/62/8e0962df89fd623767c848a65e15b1b1.jpg);
+}
+
+.pomodoro {
+    /* height: 20%; */
+    background-image: url(https://i.pinimg.com/1200x/54/b5/85/54b58556cf0ebf24283c5c27478bca9f.jpg);
+}
+
+.calendar {
+    /* height: 20%; */
+    background-image: url(https://i.pinimg.com/736x/c2/b1/da/c2b1da3765dc3ae0ceef27711ca72a7b.jpg);
+}
+
+.focus {
+    background-image: url(https://i.pinimg.com/1200x/fe/c1/ae/fec1aeac8142583f99d38e88f8754a88.jpg);
 }
 
 /* Row for todo + pomodoro */
@@ -228,6 +264,8 @@ main .sidebar button:active {
         display: grid;
         grid-template-columns: 1fr 2fr;
         grid-template-rows: 1fr 1fr 1fr;
+        gap: var(--space-lg);
+        padding: var(--space-lg);
     }
 
     main .sidebar {
@@ -277,7 +315,7 @@ main .sidebar button:active {
     .row {
         height: 100%;
         display: flex;
-        gap: var(--space-md);
+        gap: var(--space-lg);
     }
 
     .calendar {
