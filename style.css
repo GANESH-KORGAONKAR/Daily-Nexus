@@ -133,8 +133,7 @@ main .sidebar h2 input::placeholder {
 main .sidebar .sub-sec {
     height: 40%;
     width: 100%;
-    /* background-image: url(https://i.pinimg.com/1200x/a6/bd/4d/a6bd4db7ee7053689bd971b36cbcd1ef.jpg); */
-    background-image: url(https://i.pinimg.com/1200x/cf/05/31/cf0531b6c53e2fc6c33819808ac568be.jpg);
+    background-image: url(https://i.pinimg.com/1200x/f4/a2/e1/f4a2e13dd63461ab2868bb594250a9a3.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -155,37 +154,34 @@ main .sidebar .sub-sec .part2 {
     /* gap: var(--space-sm); */
 }
 
-main .sidebar .sub-sec .part1 h3,
-main .sidebar .sub-sec .part2 h3 {
+main .sidebar .sub-sec .part1 h3 {
     color: var(--text-primary-color);
-    font-size: 25px;
+    font-size: 30px;
+    text-transform: uppercase;
     font-family: Aeonik-Bold;
     letter-spacing: 1px;
 }
 
-main .sidebar .sub-sec .part1 h4,
-main .sidebar .sub-sec .part2 h4 {
-    color: var(--text-secondary-color);
-    font-size: 20px;
-    font-family: Aeonik-Light;
-    letter-spacing: 1px;
-}
-
-main .sidebar button {
-    height: 25%;
-    width: 30%;
-    background-color: var(--bg-secondary-color);
-    border-radius: var(--border-radius-sm);
-    border: 2px solid var(--text-tertiary1-color);
-    outline: none;
+main .sidebar .sub-sec .part2 h3 {
     color: var(--text-tertiary1-color);
-    font-size: 15px;
+    font-size: 30px;
+    text-transform: uppercase;
     font-family: Aeonik-Bold;
-    cursor: pointer;
+    letter-spacing: 1px;
 }
 
-main .sidebar button:active {
-    scale: 97%;
+main .sidebar .sub-sec .part1 h4 {
+    color: var(--text-primary-color);
+    font-size: 22px;
+    font-family: Aeonik-bold;
+    letter-spacing: 1px;
+}
+
+main .sidebar .sub-sec .part2 h4 {
+    color: var(--text-tertiary1-color);
+    font-size: 22px;
+    font-family: Aeonik-bold;
+    letter-spacing: 1px;
 }
 
 /* Boxes */
@@ -278,6 +274,7 @@ main .sidebar button:active {
 
     main .sidebar .sub-sec {
         flex-direction: column;
+        width: 80%;
     }
 
     main .sidebar button {
@@ -292,12 +289,12 @@ main .sidebar button:active {
 
     main .sidebar .sub-sec .part1 h3,
     main .sidebar .sub-sec .part2 h3 {
-        font-size: 35px;
+        font-size: 45px;
     }
 
     main .sidebar .sub-sec .part1 h3,
     main .sidebar .sub-sec .part2 h3 {
-        font-size: 30px;
+        font-size: 35px;
     }
 
     .box h1 {
